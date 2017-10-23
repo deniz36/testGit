@@ -1,6 +1,29 @@
-1.	Dateien werden eingelesen, in dem man den Pfad einer Datei in einem Path Objekt speichert, welches dann wiederum mit Hilfe der Methode newInputStream(path) der Klasse InputStream in einem InputStream gespeichert wird. Mit der Methode read() wird dann der nächste Buchstabe einer Textdatei ausgegeben.
-2.	Mit Hilfe eines PrintWriter Objekts, welches den gewünschten Namen der Datei als Parameter erhält, wird mit der Methode println(fileName) der gewünschte String, Integer oder auch int in einer Textdatei ausgegeben. Mit der Methode close() muss dann der Stream geschlossen werden, da sonst keine Werte ausgegeben werden können. 
-3.	Als erstes wird mit der Methode readAllBytes(path) der Files Klasse die Datei Buchstabe für Buchstabe ausgelesen, welche als Bytes in einem Byte Array gespeichert. Mit einem for-loop wird dann über dieses Array iteriert und in einem int Array(frequencyArray), in welchem jedes Element für einen Buchstaben im Alphabet steht, wird der Wert, der für die Frequenz eines Buchstaben steht erhöht, sobald sich dieser wiederholt. In einem weiteren for-loop wird über das frequencyArray iteriert und die Häufigkeiten werden als Zahlen(?) in einem String gespeichert, welcher wieder mit Hilfe eines PrintWriter Objekts in einer Textdatei gespeichert wird.
+1.	Dateien werden eingelesen, in dem man den Pfad einer Datei in 
+einem Path Objekt speichert, welches dann wiederum mit Hilfe der 
+Methode newInputStream(path) der Klasse InputStream in einem Input
+Stream gespeichert wird. Mit der Methode read() wird dann der nächs
+te Buchstabe einer Textdatei ausgegeben.
+2.	Mit Hilfe eines PrintWriter Objekts, welches den gewünschten 
+Namen der Datei als Parameter erhält, wird mit der Methode println(f
+ileName) der gewünschte String, Integer oder auch int in einer Textdat
+ei ausgegeben. Mit der Methode close() muss dann der Stream geschlossen
+werden, da sonst keine Werte ausgegeben werden können. 
+3.	Als erstes wird mit der Methode readAllBytes(path) der Files Klas
+se die Datei Buchstabe für Buchstabe ausgelesen, welche als Bytes in ei
+nem Byte Array gespeichert. Mit einem for-loop wird dann über dieses Arr
+ay iteriert und in einem int Array(frequencyArray), in welchem jedes Elem
+ent für einen Buchstaben im Alphabet steht, wird der Wert, der für die Fr
+equenz eines Buchstaben steht erhöht, sobald sich dieser wiederholt. In e
+inem weiteren for-loop wird über das frequencyArray iteriert und die Häufi
+gkeiten werden als Zahlen(?) in einem String gespeichert, welcher wieder mi
+t Hilfe eines PrintWriter Objekts in einer Textdatei gespeichert wird.
 4.	-
-5.	Das frequencyArray aus Aufgabe 3 wird hier wieder verwendet. In einem for-loop wird über dieses iteriert und mit einer if-Klausel wird das aktuelle Element des Arrays mit einer weiteren Laufvariable f verglichen. Falls das Element einen höheren Wert hat, wird es in f gespeichert. Der Buchstabe mit der höchsten Frequenz wird dann ausgegeben.
-6.	Auch hier wird das frequencyArray aus Aufgabe 3 verwendet. In einem for-loop wird über dieses iteriert und in einem weiteren verschachtelten for-loop wird entsprechend der Häufigkeit eine Anzahl an Sternchen(*) in einem String gespeichert. Für jeden Buchstaben wird dies dann als Histogramm in der Konsole ausgegeben.
+5.	Das frequencyArray aus Aufgabe 3 wird hier wieder verwendet. In einem f
+or-loop wird über dieses iteriert und mit einer if-Klausel wird das aktuelle
+Element des Arrays mit einer weiteren Laufvariable f verglichen. Falls das El
+ement einen höheren Wert hat, wird es in f gespeichert. Der Buchstabe mit der
+höchsten Frequenz wird dann ausgegeben.
+6.	Auch hier wird das frequencyArray aus Aufgabe 3 verwendet. In einem for-l
+oop wird über dieses iteriert und in einem weiteren verschachtelten for-loop wi
+rd entsprechend der Häufigkeit eine Anzahl an Sternchen(*) in einem String
+gespeichert. Für jeden Buchstaben wird dies dann als Histogramm in der Konsole ausgegeben.
